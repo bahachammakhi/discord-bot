@@ -13,8 +13,20 @@ Link to article on SitePoint: [https://www.sitepoint.com/discord-bot-node-js/](h
 
 1. Clone repo
 2. Run `npm install`
-3. Add Discord credentials in a `.env` file
-3. Run `node index.js`
-4. Interact with your Discord bot via your web browser
+3. Add Discord credentials in a `config.json` file
+4. Run `node index.js`
+5. Interact with your Discord bot via your web browser
 
+## Features
 
+List of features ready and TODOs for future development
+
+- Help
+- Home animation
+- Playing music
+- Vote system
+- Task system
+
+To-do list:
+
+- Refactoring
