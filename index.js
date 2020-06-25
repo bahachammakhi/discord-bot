@@ -105,7 +105,26 @@ client.on("message", async (message) => {
   }
 });
 
-
+client.on("message", (msg) => {
+  if (msg.content === "maseer") {
+    msg.channel.send("maseer istic lena sahby");
+  }
+  if (msg.content === "members") {
+    msg.reply("Members:");
+    members.forEach((el, i) => {
+      msg.channel.send(`${i}-${el}`);
+    });
+  }
+  if (msg.content === "member de mois") {
+    msg.reply("Members of the month : Rahma wajih Malek Aymen");
+  }
+  if (msg.content === "malek") {
+    if (msg.author.username.toLowerCase() == "malek") {
+      msg.reply("Hahahhaha tlawej ala rouhk ya bhima");
+    } else {
+      msg.reply("Toksed akel bhima ? ");
+    }
+  }
   if (msg.content === "corona") {
     axios
       .get("https://coronavirus-19-api.herokuapp.com/countries/tunisia")
@@ -118,7 +137,13 @@ client.on("message", async (message) => {
   if (msg.content === "chkn 3malni ?") {
     msg.reply("Lem3alem Baha");
   }
-
+  if (msg.content === "rahma") {
+    if (msg.author.username.toLowerCase().includes("rahma")) {
+      msg.reply("Hahahhaha tlawej ala rouhk ya bhima");
+    } else {
+      msg.reply("Toksed akel bhima ? ");
+    }
+  }
   if (msg.content === "ana member ?") {
     let response = false;
     console.log(msg.author.username);
